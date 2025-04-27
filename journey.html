@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey - WeatherWise AI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WeatherWise AI</a>
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="journey.html">The Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="supervisors.html">My Supervisors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-64 bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-4">
+            <button id="closeMobileMenu" class="text-white mb-4"><i class="fas fa-times fa-2x"></i></button>
+            <ul class="flex flex-col gap-4">
+                <li><a href="index.html" class="text-lg hover:text-blue-300">Home</a></li>
+                <li><a href="research.html" class="text-lg hover:text-blue-300">Research</a></li>
+                <li><a href="journey.html" class="text-lg hover:text-blue-300">The Journey</a></li>
+                <li><a href="supervisors.html" class="text-lg hover:text-blue-300">My Supervisors</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Overlay for Mobile Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+
+    <!-- About Me Section -->
+    <section class="py-10 bg-white">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-center mb-8">My Journey</h1>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="assets/immaculate.JPG" class="img-fluid rounded-circle mb-4" alt="Immaculate Kamusiime" style="max-width: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <p class="text-lg">
+                        I'm Immaculate Kamusiime, a results-driven Data Scientist and Engineer with a passion for leveraging AI and machine learning for real-world impact. I hold an MSc in Embedded and Mobile Systems (NM-AIST) and am currently a PhD Candidate at Makerere University. My current research addresses critical challenges in weather prediction for Uganda, aiming to improve decision-making for agriculture, disaster management, and climate resilience.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold mb-4">Education</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">PhD Computer Science, Makerere University (2024–Present)</li>
+                    <li class="list-group-item">MSc. Embedded and Mobile Systems, NM-AIST (2021–2023)</li>
+                    <li class="list-group-item">BSc. Telecommunication Engineering, Makerere University (2015–2019)</li>
+                </ul>
+                <h2 class="text-2xl font-bold mt-6 mb-4">Professional Experience</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Lecturer and Researcher, Uganda Christian University</li>
+                    <li class="list-group-item">Tech Lead, AgroHarvest Innovations</li>
+                    <li class="list-group-item">AI Innovator, AI4DLab Anglophone (Dodoma University, Tanzania)</li>
+                </ul>
+                <h2 class="text-2xl font-bold mt-6 mb-4">Technical Skills</h2>
+                <p class="text-lg">
+                    Data Science | Machine Learning | Remote Sensing | Geospatial Analysis<br>
+                    Python, R, SQL, Tableau, Power BI, Advanced Excel, Robotic Process Automation (RPA: Power Automate, Tikflow), MATLAB
+                </p>
+                <h2 class="text-2xl font-bold mt-6 mb-4">Connect With Me</h2>
+                <div class="d-flex gap-4">
+                    <a href="YOUR_ORCID_LINK" class="text-blue-600"><i class="fab fa-orcid fa-2x"></i></a>
+                    <a href="YOUR_LINKEDIN_LINK" class="text-blue-600"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="YOUR_GITHUB_LINK" class="text-blue-600"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="mailto:YOUR_EMAIL" class="text-blue-600"><i class="fas fa-envelope fa-2x"></i></a>
+                    <a href="YOUR_YOUTUBE_LINK" class="text-blue-600"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container text-center">
+            <p>© 2025 WeatherWise AI | Powered by Immaculate Kamusiime</p>
+            <p>Building Smarter Forecasts for a Resilient Future.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/main.js"></script>
+</body>
+</html>

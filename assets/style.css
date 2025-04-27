@@ -1,0 +1,155 @@
+/* Custom Tailwind and Bootstrap overrides */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Max Width */
+.container {
+    max-width: 1200px; /* Set max-width for containers */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px; /* Bootstrap's xl breakpoint */
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px; /* Bootstrap's lg breakpoint */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px; /* Bootstrap's md breakpoint */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%; /* Full width on small screens */
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.navbar-dark .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-dark .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #a0c4ff;
+}
+
+.btn-primary {
+    background-color: #1e40af;
+    border-color: #1e40af;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a8a;
+    border-color: #1e3a8a;
+}
+
+/* Mobile Menu Styles */
+#mobileMenu {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#mobileMenu.active {
+    transform: translateX(0);
+}
+
+#mobileMenuOverlay.active {
+    display: block;
+}
+
+/* Owl Carousel Styles */
+.hero-slider .owl-carousel .item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-slider .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-slider .owl-dot span {
+    background: #fff;
+    opacity: 0.7;
+}
+
+.hero-slider .owl-dot.active span {
+    background: #1e40af;
+    opacity: 1;
+}
+
+.hero-slider .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-slider .owl-nav button {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+    font-size: 2rem !important;
+    padding: 10px 20px !important;
+    margin: 0 10px;
+}
+
+.hero-slider .owl-nav button:hover {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+footer {
+    background-color: #1e3a8a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-slider .owl-carousel .item img {
+        height: 300px;
+    }
+
+    .hero-slider .item h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-slider .item p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Hide Bootstrap collapse on mobile */
+    #navbarNav {
+        display: none !important;
+    }
+}
